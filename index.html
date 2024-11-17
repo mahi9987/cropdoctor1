@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop Doctor - Plant Disease Diagnosis</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1><span>🌱</span> Crop Doctor</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#upload">Diagnosis</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="section hero">
+    <div class="hero-content">
+      <h2>Welcome to <span>Crop Doctor</span></h2>
+      <p>Empowering farmers with AI-powered plant disease diagnosis.</p>
+      <a href="#upload" class="btn">Start Diagnosis</a>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="content">
+      <h2>About the Project</h2>
+      <p>
+        Crop Doctor is an innovative solution that combines cutting-edge machine learning techniques with practical farming needs. 
+        By utilizing a lightweight Convolutional Neural Network (CNN), our system can accurately diagnose plant diseases in real-time, 
+        ensuring timely and effective intervention.
+      </p>
+    </div>
+  </section>
+
+  <section id="upload" class="section upload">
+    <h2>Upload Plant Image for Diagnosis</h2>
+    <form>
+      <input type="file" id="fileInput" accept="image/*" />
+      <button type="button" onclick="showResults()">Diagnose</button>
+    </form>
+    <div id="results" class="results" style="display:none;">
+      <h3>Diagnosis Result</h3>
+      <p><strong>Disease:</strong> <span id="disease">Healthy</span></p>
+      <p><strong>Recommendation:</strong> <span id="recommendation">No action needed</span></p>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Crop Doctor | Designed with ❤️ for Farmers.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
